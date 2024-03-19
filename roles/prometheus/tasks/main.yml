@@ -8,7 +8,7 @@
 - name: Create Prometheus container
   docker_container:
     name: prometheus
-    image: prom/prometheus:latest
+    image: tanyaharutyunyan/prometheus-github-actions:{{ image_tag }}
     recreate: yes
     ports:
       - "9090: 9090"
