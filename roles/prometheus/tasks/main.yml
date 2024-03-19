@@ -11,7 +11,7 @@
     image: prom/prometheus:latest
     recreate: yes
     ports:
-      - "{{ container_port }}: 9090"
+      - "9090: 9090"
     restart: yes
     volumes:
       - /tmp/prometheus.yml:/etc/prometheus/prometheus.yml
