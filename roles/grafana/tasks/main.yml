@@ -21,7 +21,7 @@
     image: grafana/grafana:latest
     recreate: yes
     ports:
-      - "3000: 3000"
+      - "3000:3000"
     volumes:
       - /tmp/node-exporter-full.json:/var/lib/grafana/dashboards/node-exporter-full.json
       - /tmp/node-exporter-full.yaml:/etc/grafana/provisioning/dashboards/node-exporter-full.yaml
