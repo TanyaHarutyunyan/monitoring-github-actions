@@ -20,8 +20,8 @@ jobs:
 
       - name: Build the Docker image
         run: |
-          cd node-exporter
-          docker build . --file Dockerfile --tag tanyaharutyunyan/node-exporter-github-actions:${{ env.Image_tag }}
+          docker build . --file node-exporter/Dockerfile --tag tanyaharutyunyan/node-exporter-github-actions:${{ env.Image_tag }}
+          docker build . --file prometheus/Dockerfile --tag tanyaharutyunyan/prometheus-github-actions:${{ env.Image_tag }}
 
       - name: Login the Docker Hub
         uses: docker/login-action@v3
