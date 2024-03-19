@@ -51,7 +51,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Push the Docker Hub
-        run: docker push tanyaharutyunyan/node-exporter-github-actions:${{ env.Image_tag }}
+        run: docker push tanyaharutyunyan/prometheus-github-actions:${{ env.Image_tag }}
 
   deploy:
 
