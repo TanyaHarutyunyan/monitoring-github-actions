@@ -1,0 +1,6 @@
+- name: Monitoring
+  become: true
+  hosts: Monitoring
+  roles:
+    - docker
+    - node-exporter

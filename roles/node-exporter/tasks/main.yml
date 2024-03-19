@@ -1,0 +1,11 @@
+---
+# tasks file for roles/node-exporter
+- name: Create Node Exporter container
+  docker_container:
+    name: node_exporter
+    image: tanyaharutyunyan/node-exporter-github-actions:{{ image_tag }}
+    recreate: yes
+    ports:
+      - "9100:9100"
+    restart: yes
+    restart_policy: always
