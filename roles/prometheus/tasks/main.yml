@@ -11,7 +11,7 @@
     image: tanyaharutyunyan/prometheus-github-actions:{{ image_tag }}
     recreate: yes
     ports:
-      - "9090: 9090"
+      - "9090:9090"
     restart: yes
     volumes:
       - /tmp/prometheus.yml:/etc/prometheus/prometheus.yml
